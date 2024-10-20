@@ -9,6 +9,7 @@
     <version>0.1.0</version>
 
     <properties>
+        <maven.compiler.release>22</maven.compiler.release>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <kotlin.code.style>official</kotlin.code.style>
         <kotlin.compiler.jvmTarget>1.8</kotlin.compiler.jvmTarget>
@@ -67,16 +68,22 @@
 
     <dependencies>
         <dependency>
-            <groupId>org.jetbrains.kotlin</groupId>
-            <artifactId>kotlin-test-junit5</artifactId>
-            <version>2.0.20</version>
-            <scope>test</scope>
+            <groupId>tech.icey</groupId>
+            <artifactId>panama-plus</artifactId>
+            <version>0.1.1</version>
+            <scope>compile</scope>
         </dependency>
         <dependency>
-            <groupId>org.junit.jupiter</groupId>
-            <artifactId>junit-jupiter</artifactId>
-            <version>5.10.0</version>
-            <scope>test</scope>
+            <groupId>tech.icey</groupId>
+            <artifactId>gles2</artifactId>
+            <version>0.1.0</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>tech.icey</groupId>
+            <artifactId>glfw</artifactId>
+            <version>0.1.2</version>
+            <scope>compile</scope>
         </dependency>
         <dependency>
             <groupId>org.jetbrains.kotlin</groupId>
