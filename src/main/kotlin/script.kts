@@ -7,7 +7,7 @@ val n = DynamicCharacter("n_name", image="natsuki", whatPrefix="\"", whatSuffix=
 val s = DynamicCharacter("s_name", image="sayori", whatPrefix="\"", whatSuffix="\"", ctc="ctc", ctcPosition="fixed")
 val y = DynamicCharacter("y_name", image="yuri", whatPrefix="\"", whatSuffix="\"", ctc="ctc", ctcPosition="fixed")
 
-val ch30 = label ("ch30_altered") {
+label ("ch30_altered") {
     set("m_name", "Monika")
     m > "Hey, is this working?"
     m > "Can you hear me?"
@@ -24,14 +24,15 @@ val ch30 = label ("ch30_altered") {
     jump("ch30_song")
 }
 
-val ch30_song = label ("ch30_song") {
+label ("ch30_song") {
+    set("m_name", "Monika")
     set("y_name", "Yuri")
     set("s_name", "Sayori")
     set("n_name", "Natsuki")
 
     s > "Hey Hey my heart's beating when I'm hanging out with you"
     s > "Why does my heart ache when I hear you feel the same way too"
-    n > "Just like a Sunday, it's sweet every time I teach you something new"
+    n > "Just like a Sundae, it's sweet every time I teach you something new"
     n > "Is this by chance or fate whenever it's just me and you"
     n > "Don't get the wrong idea"
     y > "When we touch, it'll never be enough"
@@ -66,6 +67,4 @@ val ch30_song = label ("ch30_song") {
     m > "MONIKA"
 }
 
-fun main() {
-    play("ch30_altered")
-}
+play("ch30_altered")
