@@ -1,7 +1,5 @@
 package tech.icey.pl8
 
-import tech.icey.kick.GameplayStateTransformer
-
 interface Statement {
     fun execute(state: GameplayState)
 }
